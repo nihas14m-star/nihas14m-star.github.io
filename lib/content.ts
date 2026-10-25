@@ -44,7 +44,7 @@ export const projects: Project[] = [
     approach:
       "The repository documents a MySQL schema, Node/Express REST API, React/Vite frontend, concurrency-aware seat holds, simulated payments, admin routes, and an optional AI layer.",
     contribution:
-      "Repository owner and author of the two visible public commits.",
+      "Repository owner. Project details and implementation are documented in the public repository.",
     status: "Public repository · no demo link listed",
     accent: "amber",
     tags: ["JavaScript", "React", "Node.js", "MySQL"],
@@ -111,21 +111,6 @@ export const openSource = [
   },
 ];
 
-export const experiences = [
-  {
-    company: "Unified Mentor Pvt. Ltd.",
-    role: "AI / Data internship experience",
-    period: "Details editable",
-    description: "Relevant internship experience. Add dates, scope, and shipped outcomes when ready.",
-  },
-  {
-    company: "Neoskillz",
-    role: "Internship program participation",
-    period: "Details editable",
-    description: "Internship program participation. Add the most useful project or learning context when ready.",
-  },
-];
-
 export const achievements = [
   {
     title: "Smart India Hackathon 2026",
@@ -141,6 +126,5 @@ export const achievements = [
 
 export const links = {
   github: "https://github.com/nihas14m-star",
-  linkedin: "#contact",
-  resume: "#contact",
+  linkedin: "https://www.linkedin.com/in/nihas-mangu-631b66385/",
 };

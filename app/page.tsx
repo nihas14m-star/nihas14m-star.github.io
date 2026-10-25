@@ -13,12 +13,11 @@ import {
   MoveUpRight,
   X,
 } from "lucide-react";
-import { achievements, experiences, links, openSource, projects, skillGroups, type Project } from "../lib/content";
+import { achievements, links, openSource, projects, skillGroups, type Project } from "../lib/content";
 
 const navItems = [
   { label: "Work", href: "#work" },
   { label: "Open source", href: "#open-source" },
-  { label: "Experience", href: "#experience" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
@@ -232,8 +231,7 @@ export default function HomePage() {
               <div className="hero-actions">
                 <a className="button button-primary" href="#work">Explore my work <ArrowDownRight size={15} strokeWidth={1.8} aria-hidden="true" /></a>
                 <a className="text-link" href={links.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} strokeWidth={1.8} aria-hidden="true" /></a>
-                <a className="text-link" href={links.linkedin}>LinkedIn <span className="micro-label">add URL</span></a>
-                <a className="text-link" href={links.resume}>Resume <span className="micro-label">add PDF</span></a>
+                <a className="text-link" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn <ExternalLink size={14} strokeWidth={1.7} aria-hidden="true" /></a>
               </div>
             </div>
             <SystemVisual />
@@ -320,15 +318,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="section" id="experience" aria-labelledby="experience-title">
-          <div className="container">
-            <div className="section-heading"><div className="section-kicker">Experience</div><div><h2 className="section-title" id="experience-title">Still in motion.</h2><p className="section-intro">Early experience, treated as a record of what I have been close to — not a list of claims that need inflating.</p></div></div>
-            <div className="experience-list">
-              {experiences.map((item) => <article className="experience-item" key={item.company}><div><h3 className="experience-company">{item.company}</h3><p className="experience-role">{item.role}</p></div><p className="experience-copy">{item.description}</p><p className="experience-period">{item.period}</p></article>)}
-            </div>
-          </div>
-        </section>
-
         <section className="section skills-section" aria-labelledby="skills-title">
           <div className="container">
             <div className="section-heading"><div className="section-kicker">The toolkit</div><div><h2 className="section-title" id="skills-title">Enough surface area to build.</h2><p className="section-intro">A deliberately short list of technologies that appear in the work — not a wall of every tool I have ever opened.</p></div></div>
@@ -351,7 +340,7 @@ export default function HomePage() {
         </section>
 
         <section className="section contact-section" id="contact" aria-labelledby="contact-title">
-          <div className="container"><div className="contact-panel"><div className="contact-layout"><h2 className="contact-title" id="contact-title">Let&apos;s make something useful.</h2><div><p className="contact-copy">If you are building an AI product, a developer tool, or a team that cares about how software feels to use, I would like to hear what you are working on.</p><div className="contact-links"><a className="button button-primary" href="mailto:add-your-email@example.com">Start a conversation <ArrowUpRight size={14} strokeWidth={1.8} aria-hidden="true" /></a><a className="button button-quiet" href={links.github} target="_blank" rel="noreferrer"><GitBranch size={14} strokeWidth={1.8} aria-hidden="true" /> GitHub</a><a className="button button-quiet" href={links.linkedin}>LinkedIn <span className="micro-label">add URL</span></a></div></div></div></div></div>
+          <div className="container"><div className="contact-panel"><div className="contact-layout"><h2 className="contact-title" id="contact-title">Let&apos;s make something useful.</h2><div><p className="contact-copy">If you are building an AI product, a developer tool, or a team that cares about how software feels to use, I would like to hear what you are working on.</p><div className="contact-links"><a className="button button-quiet" href={links.github} target="_blank" rel="noreferrer"><GitBranch size={14} strokeWidth={1.8} aria-hidden="true" /> GitHub</a><a className="button button-quiet" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn <ExternalLink size={14} strokeWidth={1.7} aria-hidden="true" /></a></div></div></div></div></div>
         </section>
       </main>
 
