@@ -127,4 +127,5 @@ export const achievements = [
 export const links = {
   github: "https://github.com/nihas14m-star",
   linkedin: "https://www.linkedin.com/in/nihas-mangu-631b66385/",
+  email: "mailto:nihas14.m@gmail.com",
 };
