@@ -182,8 +182,8 @@ function ProjectDialog({ project, onClose }: { project: Project; onClose: () => 
           </div>
         </div>
         <div className="dialog-footer">
-          {project.repo ? <ExternalAnchor href={project.repo}>View repository</ExternalAnchor> : <span className="micro-label">Repository link to add</span>}
-          {project.demo ? <ExternalAnchor href={project.demo}>Open demo</ExternalAnchor> : <span className="micro-label">Demo link to add</span>}
+          {project.repo ? <ExternalAnchor href={project.repo}>View repository</ExternalAnchor> : null}
+          {project.demo ? <ExternalAnchor href={project.demo}>Open demo</ExternalAnchor> : null}
         </div>
       </div>
     </div>
