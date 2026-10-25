@@ -246,22 +246,22 @@ export default function HomePage() {
             <div className="section-heading">
               <div className="section-kicker">Selected work</div>
               <div>
-                <h2 className="section-title" id="work-title">Projects are the product.</h2>
-                <p className="section-intro">A small set of systems I am actively shaping — each one an exercise in making intelligence useful, legible, and worth returning to.</p>
+                <h2 className="section-title" id="work-title">Public work, with receipts.</h2>
+                <p className="section-intro">A small set of public repositories that can be inspected directly on GitHub — fewer projects, clearer evidence.</p>
               </div>
             </div>
 
             <article className="flagship">
               <div className="flagship-copy">
-                <div className="eyebrow">01 / flagship project</div>
-                <h3 className="flagship-title">SatQuery AI</h3>
-                <p className="flagship-summary">An AI-powered satellite intelligence system designed around natural-language interaction with satellite imagery and geospatial information.</p>
+                <div className="eyebrow">{projects[0].index} / public repository</div>
+                <h3 className="flagship-title">{projects[0].name}</h3>
+                <p className="flagship-summary">{projects[0].summary}</p>
                 <div className="project-tags">
                   {projects[0].tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}
                 </div>
                 <div className="flagship-meta">
-                  <div className="meta-block"><small>Focus</small><span>Evidence-first VLM workflows</span></div>
-                  <div className="meta-block"><small>Status</small><span>Active build · SIH 2026</span></div>
+                  <div className="meta-block"><small>Source</small><span>GitHub · nihas14m-star</span></div>
+                  <div className="meta-block"><small>Status</small><span>{projects[0].status}</span></div>
                 </div>
                 <button className="button button-primary" type="button" onClick={() => setSelectedProject(projects[0])} style={{ marginTop: "2rem" }}>Explore case study <MoveUpRight size={14} strokeWidth={1.8} aria-hidden="true" /></button>
               </div>
@@ -309,10 +309,10 @@ export default function HomePage() {
           <div className="container">
             <div className="section-heading">
               <div className="section-kicker">Open source</div>
-              <div><h2 className="section-title" id="open-source-title">Work in public.</h2><p className="section-intro">Personal projects show taste. Contributions to established codebases show how I work when the constraints are real.</p></div>
+              <div><h2 className="section-title" id="open-source-title">Work in public.</h2><p className="section-intro">Public repositories and pull requests are listed separately so repository ownership and contribution status stay explicit.</p></div>
             </div>
             <div className="open-source-layout">
-              <div className="side-note"><span className="micro-label">Contribution log</span><p>Focused fixes, careful validation, and the patience to understand an existing system before changing it.</p><a className="text-link" href={links.github} target="_blank" rel="noreferrer">Browse GitHub <ExternalLink size={14} strokeWidth={1.7} aria-hidden="true" /></a></div>
+              <div className="side-note"><span className="micro-label">Contribution log</span><p>GitHub is the source of truth here: every item links to the public pull request, and open work is not described as merged.</p><a className="text-link" href={links.github} target="_blank" rel="noreferrer">Browse GitHub <ExternalLink size={14} strokeWidth={1.7} aria-hidden="true" /></a></div>
               <div className="timeline-list">
                 {openSource.map((item) => <a className="timeline-item" href={item.href} target="_blank" rel="noreferrer" key={item.name}><span className="timeline-marker">{item.marker}</span><div><h3 className="timeline-title">{item.name}</h3><p className="timeline-type">{item.type}</p></div><p className="timeline-copy">{item.description}</p><span className="timeline-arrow"><ArrowUpRight size={15} strokeWidth={1.7} aria-hidden="true" /></span></a>)}
               </div>
@@ -345,8 +345,8 @@ export default function HomePage() {
 
         <section className="section" id="about" aria-labelledby="about-title">
           <div className="container">
-            <div className="section-heading"><div className="section-kicker">About</div><div><h2 className="section-title" id="about-title">The person behind the systems.</h2></div></div>
-            <div className="about-layout"><p className="about-statement">I am interested in the space where <em>intelligence becomes usable.</em></p><div className="about-copy"><p>I am building toward a career in AI/ML engineering by making systems that connect models to real work: satellite analysis, agentic execution, browser-native assistance, and developer research.</p><p>I am learning in public — by shipping small products, reading the constraints inside mature codebases, and paying attention to the interface between a model&apos;s capability and a person&apos;s attention.</p><div className="about-principles"><div className="principle"><strong>Curious</strong><span>Ask better questions</span></div><div className="principle"><strong>Practical</strong><span>Ship the useful loop</span></div><div className="principle"><strong>Precise</strong><span>Make the details count</span></div></div></div></div>
+            <div className="section-heading"><div className="section-kicker">About</div><div><h2 className="section-title" id="about-title">The person behind the repositories.</h2></div></div>
+            <div className="about-layout"><p className="about-statement">I am interested in the space where <em>intelligence becomes usable.</em></p><div className="about-copy"><p>I am building toward a career in AI/ML engineering through public work in Earth-observation analysis, full-stack product systems, and careful open-source fixes.</p><p>I am learning in public by shipping inspectable repositories, reading the constraints inside mature codebases, and keeping the line between verified work and unfinished ideas visible.</p><div className="about-principles"><div className="principle"><strong>Curious</strong><span>Ask better questions</span></div><div className="principle"><strong>Practical</strong><span>Ship the useful loop</span></div><div className="principle"><strong>Precise</strong><span>Make the details count</span></div></div></div></div>
           </div>
         </section>
 

@@ -18,113 +18,96 @@ export const projects: Project[] = [
   {
     index: "01",
     name: "SatQuery AI",
-    eyebrow: "Flagship project · geospatial intelligence",
+    eyebrow: "Public repository · remote-sensing analysis",
     summary:
-      "An evidence-first vision-language assistant for asking natural-language questions of satellite and remote-sensing imagery.",
+      "An evidence-first vision-language assistant for natural-language analysis of multimodal satellite and remote-sensing imagery.",
     problem:
-      "Satellite data is rich, but the path from a question to a trustworthy visual answer is still too technical and fragmented.",
+      "Remote-sensing analysis needs input validation, explicit scientific limitations, and evidence that stays connected to the result.",
     approach:
-      "SatQuery AI combines agentic orchestration, VLM workflows, grounding, and visible evidence so answers stay connected to the imagery that supports them.",
+      "The public README documents local workflows for VQA, grounding, bi-temporal change analysis, optical + SAR analysis, visual evidence, observable execution traces, and exports.",
     contribution:
-      "Designed the product direction around explainable interaction, observable execution, and practical remote-sensing workflows.",
-    status: "Active build · Smart India Hackathon 2026",
+      "Repository owner. The README identifies the registered team as AstroNex 1, so this portfolio does not claim sole authorship.",
+    status: "Public repository · no demo link listed",
     accent: "mint",
-    tags: ["AI agents", "VLMs", "GroundingDINO", "Computer vision"],
+    tags: ["Python", "Computer vision", "GroundingDINO", "Playwright"],
     repo: "https://github.com/nihas14m-star/satquery-ai",
     visual: "satellite",
   },
   {
     index: "02",
-    name: "EVOX",
-    eyebrow: "Agentic systems · execution interface",
+    name: "CINEVERSE",
+    eyebrow: "Public repository · full-stack college project",
     summary:
-      "An AI-native workspace where agents reason, interact with tools, and execute tasks through a structured interface.",
+      "A full-stack movie ticket booking platform built with MySQL, Node.js + Express, React + Vite, and an optional OpenRouter AI layer.",
     problem:
-      "Chat is a poor control surface for multi-step work: intent, tool calls, progress, and outcomes disappear into a transcript.",
+      "A booking platform needs more than CRUD screens: seat holds, database guarantees, checkout, digital tickets, and clear admin workflows all need to agree.",
     approach:
-      "Evox treats agent work as an execution system — with explicit steps, tool boundaries, status, and a place for the human to stay oriented.",
+      "The repository documents a MySQL schema, Node/Express REST API, React/Vite frontend, concurrency-aware seat holds, simulated payments, admin routes, and an optional AI layer.",
     contribution:
-      "Explored the interaction model for moving from conversational prompts to observable, editable execution flows.",
-    status: "Concept in progress · details editable",
+      "Repository owner and author of the two visible public commits.",
+    status: "Public repository · no demo link listed",
     accent: "amber",
-    tags: ["Agentic AI", "Tool execution", "Workflows", "AI-native UI"],
+    tags: ["JavaScript", "React", "Node.js", "MySQL"],
+    repo: "https://github.com/nihas14m-star/movie-ticket-booking-system",
     visual: "execution",
-  },
-  {
-    index: "03",
-    name: "ECHO AI",
-    eyebrow: "Local-first · browser assistant",
-    summary:
-      "A local-first WhatsApp AI assistant for understanding chats and drafting replies without taking control away from the user.",
-    problem:
-      "Useful context is buried in chat history, but automation should not quietly send messages on a person's behalf.",
-    approach:
-      "A Chrome Manifest V3 extension uses the Side Panel API, IndexedDB, and chrome.storage.local to keep context close to the browser while leaving the final Send action in WhatsApp's native UI.",
-    contribution:
-      "Defined the human-in-the-loop boundary: AI can analyze and draft, but the user remains in control of sending.",
-    status: "Prototype · details editable",
-    accent: "blue",
-    tags: ["Chrome MV3", "Side Panel API", "IndexedDB", "Local-first"],
-    visual: "whatsapp",
-  },
-  {
-    index: "04",
-    name: "REP OPILOT",
-    eyebrow: "Developer tooling · repository intelligence",
-    summary:
-      "A developer tool for discovering, comparing, and researching GitHub repositories with an AI-assisted workflow.",
-    problem:
-      "Finding a useful repository is easy; understanding whether it is relevant, healthy, and worth extending takes much longer.",
-    approach:
-      "Rep Opilot brings GitHub Search API results and structured AI-assisted analysis into one focused research loop.",
-    contribution:
-      "Worked on the product idea around turning repository discovery into a repeatable decision-making tool.",
-    status: "Concept · details editable",
-    accent: "rose",
-    tags: ["GitHub Search API", "Node.js", "NVIDIA Nemotron", "Research"],
-    visual: "research",
   },
 ];
 
 export const skillGroups = [
   {
     title: "AI / ML",
-    items: ["Python", "Machine Learning", "Computer Vision", "VLMs", "LLMs", "AI Agents"],
+    items: ["Python", "Computer Vision", "Vision-language models", "AI Agents"],
   },
   {
     title: "AI tooling",
-    items: ["OpenAI", "Gemini", "NVIDIA Nemotron", "GroundingDINO", "OpenRouter"],
+    items: ["GroundingDINO", "NVIDIA Nemotron", "OpenRouter"],
   },
   {
     title: "Development",
     items: ["JavaScript", "TypeScript", "Node.js", "React", "Next.js"],
   },
   {
-    title: "Developer tools",
-    items: ["Git", "GitHub", "VS Code"],
+    title: "Testing / tools",
+    items: ["Git", "GitHub", "Playwright", "pytest"],
   },
   {
     title: "Data / storage",
-    items: ["SQL", "IndexedDB"],
+    items: ["MySQL", "SQL", "JSON exports"],
   },
 ];
 
 export const openSource = [
   {
-    name: "n8n",
-    type: "Established open-source project",
+    name: "n8n · PR #40833",
+    type: "Open pull request · not merged",
     description:
-      "Fixed an issue where Execute Workflow Trigger validation failed when the workflow input schema was empty — a focused contribution across validation logic and testing.",
+      "Proposes allowing Execute Workflow Trigger to accept empty workflow input schemas and adds regression coverage. GitHub currently lists the pull request as open.",
     href: "https://github.com/n8n-io/n8n/pull/40833",
     marker: "01",
   },
   {
-    name: "OmniRush",
-    type: "Desktop AI tooling",
+    name: "OmniRush · PR #325",
+    type: "Open pull request · not merged",
     description:
-      "Contributions to the OmniRush desktop coding-agent project. The repository is public; specific contribution details remain intentionally editable until the relevant PR links are added.",
-    href: "https://github.com/nihas14m-star/omnirush-gui",
+      "Adds navigation for in-document anchors, relative workspace-file links, and external links in artifact Markdown previews. GitHub currently lists the pull request as open.",
+    href: "https://github.com/omnirush-ai/omnirush-gui/pull/325",
     marker: "02",
+  },
+  {
+    name: "OmniRush · PR #326",
+    type: "Open pull request · not merged",
+    description:
+      "Switches surface Markdown code blocks to the existing light/dark Shiki themes and adds regression coverage. GitHub currently lists the pull request as open.",
+    href: "https://github.com/omnirush-ai/omnirush-gui/pull/326",
+    marker: "03",
+  },
+  {
+    name: "CrewAI · PR #7802",
+    type: "Open pull request · not merged",
+    description:
+      "Replaces PostgreSQL-specific NL2SQL schema introspection with SQLAlchemy reflection and adds SQLite/PostgreSQL regression coverage. GitHub currently lists the pull request as open.",
+    href: "https://github.com/crewAIInc/crewAI/pull/7802",
+    marker: "04",
   },
 ];
 
@@ -146,18 +129,13 @@ export const experiences = [
 export const achievements = [
   {
     title: "Smart India Hackathon 2026",
-    detail: "Participating / nominated with Team ASTRONEX 1",
+    detail: "The SatQuery AI README identifies AstroNex 1 as the registered team for problem statement SIH26167.",
     marker: "01",
   },
   {
-    title: "IIFT Strategos 2026",
-    detail: "Article Writing Competition · Rank 30 / 2040 applicants",
+    title: "Public pull requests",
+    detail: "Open pull requests in n8n, OmniRush, and CrewAI; no merged pull requests were found in the audit.",
     marker: "02",
-  },
-  {
-    title: "Open-source contributions",
-    detail: "Contributions to n8n and OmniRush",
-    marker: "03",
   },
 ];
 
