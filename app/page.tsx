@@ -228,7 +228,7 @@ export default function HomePage() {
               <div className="hero-kicker"><span className="status-dot" /> AI systems / developer tools / useful software</div>
               <h1 className="hero-title" id="hero-title">Nihas</h1>
               <p className="hero-subtitle">AI/ML Engineer &amp; Builder</p>
-              <p className="hero-description">I build AI systems, intelligent agents, and developer tools that make complex work feel clearer, more observable, and more human.</p>
+              <p className="hero-description">I build AI/ML and full-stack software that makes complex work feel clearer, more observable, and more useful.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#work">Explore my work <ArrowDownRight size={15} strokeWidth={1.8} aria-hidden="true" /></a>
                 <a className="text-link" href={links.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} strokeWidth={1.8} aria-hidden="true" /></a>
