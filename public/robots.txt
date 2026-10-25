@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nihas14m-star.github.io/sitemap.xml
