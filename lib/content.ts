@@ -51,6 +51,24 @@ export const projects: Project[] = [
     repo: "https://github.com/nihas14m-star/movie-ticket-booking-system",
     visual: "execution",
   },
+  {
+    index: "03",
+    name: "divy",
+    eyebrow: "Public repository · AI orchestration & evaluation",
+    summary:
+      "A provider-neutral AI orchestration framework with evidence-based routing, verification, recovery, evaluation, and reproducible benchmarks.",
+    problem:
+      "AI systems need reliable routing between providers, verifiable outputs, automatic recovery from failures, and benchmarks that reproduce — not just leaderboard scores.",
+    approach:
+      "The repository implements a modular orchestration layer: provider adapters normalize interfaces, evidence-based routing selects models per task, verification checks outputs against criteria, recovery retries with backoff, and a benchmark harness produces reproducible results.",
+    contribution:
+      "Repository owner. Designed and built the orchestration core, provider abstraction, verification pipeline, and benchmark infrastructure.",
+    status: "Public repository · active development",
+    accent: "blue",
+    tags: ["Python", "AI Agents", "Orchestration", "Evaluation", "Benchmarks"],
+    repo: "https://github.com/nihas14m-star/divy",
+    visual: "execution",
+  },
 ];
 
 export const skillGroups = [
